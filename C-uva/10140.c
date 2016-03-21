@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
-#define MAX 50000
+#define MAX 47000
 long long int plist[MAX];
 char is_prime[MAX+1];
 int list[1000000];
@@ -35,7 +35,7 @@ int main()
         }
         int now = 0;
         long long int ii;
-        while(now<z)
+        while(now<z && plist[now]<=U)
         {
             long long int tmp = L/plist[now];
             if(L%plist[now] != 0)
